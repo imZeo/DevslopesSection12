@@ -51,7 +51,26 @@ ul.topnav {
     display: none;
 }
 
+/* HEADER */
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.headshotWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+.headshot {
+    border-radius: 50%;
+    max-width: 200px;
+    width: 100%;
+}
 
 @media (max-width: 768px) {
     ul.topnav li a.navLink {
