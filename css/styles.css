@@ -12,16 +12,26 @@ html, body {
 nav.navBar {
     display: flex;
     padding: 10px;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
-.brand, .navLink {
+.brand, .navLink, a {
     text-transform: uppercase;
     color: #303137;
+
 }
 
-.brand span {
+.brand {
+    font-size: 25px;
+}
+
+.sensei {
     color: red;
 }
+
 
 ul.navBarList {
     list-style: none;
@@ -30,7 +40,8 @@ ul.navBarList {
     display: flex;
 }
 
-.navLink {
+.navBarList, .navLink, a {
     text-decoration: none;
     padding-left: 2rem;
+    font-size: 20px;
 }
