@@ -10,14 +10,16 @@ html, body {
 }
 
 /* NAVBAR ELEMENTS */
-
-.navBar {
-    display: flex;
-    padding: 10px;
+.navBar, .container {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
+}
+
+.navBar {
     justify-content: space-between;
+    padding: 10px;
+    display: flex;
 }
 
 .brand, .navLink, a {
@@ -52,7 +54,6 @@ ul.topnav {
 }
 
 /* HEADER */
-
 header {
     display: flex;
     justify-content: center;
@@ -70,6 +71,78 @@ header {
     border-radius: 50%;
     max-width: 200px;
     width: 100%;
+}
+
+.headshotWrapper h1 {
+    font-variant: small-caps;
+}
+
+/* SECTION : SERVICES */
+.services {
+    background-color: #F1f3fa;
+    padding: 4rem 1rem;
+}
+
+.mediaObject {
+    display: flex;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+
+.iconWrapperLeft,
+.iconWrapperRight {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.blurbWrapperRight,
+.blurbWrapperLeft {
+    flex: 1;
+    padding: 5px;
+}
+
+.iconWrapperRight,
+.blurbWrapperRight {
+    order: 2;
+}
+
+.iconWrapperLeft,
+.blurbWrapperLeft {
+    order: 1;
+}
+
+.blurbInfo {
+    color: #646b90;
+    font-size: 18px;
+    line-height: 2em;
+}
+
+.blurbWrapperRight h3,
+.blurbWrapperLeft h3 {
+    font-size: 25px;
+    text-transform: lowercase;
+}
+
+.icon {
+    width: 185px;
+}
+
+.quoteBtnWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.quoteBtn {
+    font-size: 18px;
+    padding: 1rem 4rem;
+    color: white;
+    background-color: #66b6d3;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -104,5 +177,11 @@ header {
     ul.topnav.responsive li a.navLink {
         display: block;
         line-height: 2em;
+    }
+
+    .blurbInfo {
+        color: #646b90;
+        font-size: 14px;
+        line-height: 1.5em;
     }
 }
