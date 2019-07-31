@@ -78,7 +78,8 @@ header {
 }
 
 /* SECTION : SERVICES */
-.services {
+.services,
+.contactContainer {
     background-color: #F1f3fa;
     padding: 4rem 1rem;
 }
@@ -152,7 +153,7 @@ header {
 /* SECTION: portfolio */
 .sectionHeader {
     text-align: center;
-    padding: 6rem 0 4rem;
+    padding: 4rem 0 2rem;
 }
 
 .portfolioWrapper {
@@ -181,6 +182,35 @@ header {
 .portfolioBox:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+/* contactContainer */
+
+form label {
+    font-size: 14px;
+}
+
+.formGroup {
+    margin-bottom: .75rem;
+    margin-top: .75rem;
+}
+
+.formControl {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    color: #292b2c;
+    padding: .25rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    display: block;
+}
+
+.submitBtnWrapper {
+    margin-top: 3rem;
 }
 
 /* MEDIA QUERY */
@@ -242,6 +272,17 @@ header {
 
     .portfolioWrapper {
         text-align: center;
+    }
+
+    .formGroup {
+        display: flex;
+    }
+
+    .submitBtnWrapper {
+        display: flex;
+        text-align: : center;
+        justify-content: center;
+        align-items: center;
     }
 }
 
